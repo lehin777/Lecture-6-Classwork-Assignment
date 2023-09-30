@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #e1e1e1;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-top: 20px;
+    }
+	
+  .subscribe-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+
+ .subscribe-button:hover {
+  background-color: #555;
+  }
+	
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <script>   
+    $(document).ready(function(){  
+        $("#startAnimation").click(function(){  
+            $("#animateDiv").animate({  
+                left: '150px',  
+                opacity: '0.5',  
+                height: '150px',  
+                width: '150px'  
+            });  
+        });  
+    });  
+  </script> 
+</head>
+  
+</head>
+
+<body>
+
+<header>
+  <h1>Understanding Sass</h1>
+  <p>A TSI University HTML, CSS, and SASS Workshop</p>
+</header>
+
+<section>
+  <p><strong>Disclaimer:</strong> This is TSI University task for HTML, CSS, and SASS workshop, not for publishing anywhere on the media.</p>
+</section>
+
+<section>
+  <h2>What is Sass? Your Guide to This Top CSS Preprocessor</h2>
+  <p>By Tammy Coron, January 10, 2020</p>
+
+  <p>Sass, short for Syntactically Awesome Style Sheets, is a powerful CSS preprocessor that enhances the functionality and formatting of our beloved Cascading Style Sheets. If you’re diving into modern web development, understanding Sass can be your game changer.</p>
+  
+  <h3>What is Sass?</h3>
+  <img src="images/sass-logo.png" alt="Sass Logo" style="float:right; margin: 0 0 10px 10px; width: 200px;">
+  <p>Sass offers more than just a sleek name; it introduces a realm of features not directly available in plain CSS. With Sass, you can use variables, nested rules, mixins, and more, paving the way for more organized, maintainable, and DRY (Don't Repeat Yourself) CSS code.</p>
+
+  <h3>Why Use Sass?</h3>
+  <p>One of the shining features of Sass is its ability to use variables. Imagine the convenience of declaring a color or font size once and using it throughout your stylesheets. That’s not a fantasy; it’s a reality with Sass. Here’s a quick peek:</p>
+  
+  <pre style="background-color:#f9f9f9; padding:10px; border-radius:5px;">
+$primary-color: #333;
+$font-stack: Helvetica, sans-serif;
+
+body {
+  color: $primary-color;
+  font-family: $font-stack;
+}
+  </pre>
+  
+  <h3>Nesting</h3>
+  <p>Nesting is another jewel in Sass’s crown. It allows CSS rules to be nested within one another, echoing the HTML’s structure and making stylesheets more readable and manageable. However, wield this power with caution to avoid an inception of overly nested rules!</p>
+
+  <h3>Mixins and Functions</h3>
+  <p>Mixins are like predefined styles that can be included wherever needed. They can also accept parameters to make them even more dynamic. Functions, on the other hand, let us perform operations and calculations directly within our stylesheets. The versatility and power are undeniable.</p>
+
+  <h3>Getting Started with Sass</h3>
+  <p>Starting with Sass is a breeze. All you need is Ruby installed on your machine, and you’re good to go. Follow the installation guides, write your Sass (or SCSS, its CSS-like syntax), and compile it into a well-formatted, standard CSS that browsers can interpret.</p>
+  
+  <p>For an in-depth journey and hands-on examples, check out the official <a href="https://sass-lang.com/guide" target="_blank">Sass Guide</a>.</p>
+
+  <p>Article source: <a href="https://www.creativebloq.com/web-design/what-is-sass-111517618" target="_blank">Creative Bloq</a></p>
+  
+    <h3>Subscribe to Our Newsletter</h3>
+  <p>Stay updated with our latest articles and tutorials on web design and development. Enter your email below to subscribe!</p>
+  
+  <form action="/subscribe" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit" class="subscribe-button">Subscribe</button>
+  </form>
+  
+</section>
+
+<section>
+  <h3>Experience The Animation</h3>
+  <button id="startAnimation">Start Animation</button>  
+  <div id="animateDiv" style="background:#125f21;height:100px;width:100px;position:absolute;"></div>  
+</section>
+
+<section>
+  <h2>About the Author</h2>
+  <p>Tammy is an independent creative professional and the host of Roundabout: Creative Chaos. She’s also the owner of Just Write Code, an independent production company located in West Tennessee.</p>
+  <p>For more information about Tammy, visit her <a href="#" target="_blank">website</a>.</p>
+</section>
+
+<footer>
+  &copy; 2023 TSI University | Workshop on HTML, CSS, and SASS
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
